@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.direction-column {
+  flex-direction: column;
+}
+.align-items {
+  align-items: center;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.d-none {
+  display: none;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-30 {
+  gap: 30px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.pad-50 {
+  padding: 50;
+}
+
+h1  {
+  font-size: 5em;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.heroSection {
+  background-image: 
+  linear-gradient(rgba(0,0,0,1),
+  rgba(0,0,0,.1)),
+  url("assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #FFF;
+  border-bottom: 10px solid #222222;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.sign-in-a {
+  color: white;
+  background-color: #e30c12;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sign-in-a:hover {
+  background-color: #940b0f;
+  transition-duration: 0.3s;
+}
+
+.heroSection > div {
+  gap: 150px;
+}
+.headings {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  gap: 20px;
+  padding-bottom: 150px;
+}
+input[type=email] {
+  flex: 0 0 60%;
+  padding: 22px 5px;
+  font-size: 1.2em;
+}
+button[type=submit] {
+  flex: 1 0;
+  background-color: #e30c12;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #940b0f;
+  transition-duration: 0.3s;
+}
+section#enjoyTv,
+section#download-section,
+section#watch-everywhere,
+section#FAQ {
+  border-bottom: 10px solid #222222;
+  padding: 100px 20px 50px 20px;
+}
+.enjoy-data,
+.download-data,
+.watch-data {
+  flex: 0 0 50%;
+}
+.enjoy-tv,
+.download-img,
+.watch-img {
+  flex: 1 0;
+}
+.enjoy-tv img,
+.download-img img,
+.watch-img img {
+  max-width: 100%;
+}
+.enjoy-data h2,
+.download-data h2,
+.watch-data h2,
+section#FAQ h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.enjoy-data p,
+.download-data p,
+.watch-data p {
+  font-size: 25px;
+}
+section#download-section {
+  gap: 160px;
+}
+
+section#FAQ {
+  padding: 100px 20px 40px 20px;
+}
+div#questionsList {
+  width: 800px;
+}
+details {
+  background-color: #303030;
+  padding: 16px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+details:hover {
+  background-color: #222222;
+  transition-duration: 0.3s;
+}
+details  summary {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+summary .fa-minus {
+  display: none;
+}
+details[open] summary 
+.fa-minus {
+  display: block;
+}
+details[open] summary 
+.fa-plus {
+  display: none;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#FAQ form {
+  width: 800px;
+}
+#footerNavs nav ul li {
+  font-size:1rem;
+}
+#footerNavs nav ul li:hover {
+  color: rgb(189, 181, 181);
+  transition-duration: 0.3s;
+}
+#footerNavs nav ul {
+  list-style: none;
+}
+footer {
+  color:#939392;
+  padding: 100px 20px 50px 20px;
+}
+.gap-50 {
+  gap: 50px;
+}
+footer > p {
+  font-size: 1.3rem;
+}
+.small-font {
+  font-size: 0.9em;
+}
+
+
+
+
+@media (max-width: 1024px) {
+ 
+  .heroSection > div {
+    gap: 80px;
+  }
+
+  .headings h1 {
+    font-size: 3.5em;
+  }
+
+  .headings h2 {
+    font-size: 1.5em;
+  }
+
+  .heroSection input[type=email] {
+    flex: 1;
+    width: 100%;
+  }
+
+  section#enjoyTv,
+  section#download-section,
+  section#watch-everywhere {
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .enjoy-data,
+  .download-data,
+  .watch-data {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .enjoy-tv,
+  .download-img,
+  .watch-img {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .enjoy-data h2,
+  .download-data h2,
+  .watch-data h2 {
+    font-size: 30px;
+  }
+
+  .enjoy-data p,
+  .download-data p,
+  .watch-data p {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  #questionsList {
+    width: 100%;
+  }
+
+  #FAQ form {
+    width: 100%;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .heroSection > div {
+    gap: 50px;
+  }
+
+  .headings h1 {
+    font-size: 2.5em;
+  }
+
+  .headings h2 {
+    font-size: 1.2em;
+  }
+
+  .heroSection input[type=email] {
+    padding: 18px 5px;
+  }
+
+  button[type=submit] {
+    font-size: 1em;
+  }
+
+  .sign-in-a {
+    font-size: 1.1em;
+  }
+
+  .sign-in-a {
+    padding: 6px 14px;
+  }
+
+  section#enjoyTv,
+  section#download-section,
+  section#watch-everywhere {
+    padding: 60px 20px;
+    gap: 20px;
+  }
+
+  .enjoy-data h2,
+  .download-data h2,
+  .watch-data h2 {
+    font-size: 24px;
+  }
+
+  .enjoy-data p,
+  .download-data p,
+  .watch-data p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+}
